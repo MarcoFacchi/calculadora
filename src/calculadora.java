@@ -8,7 +8,7 @@ public class calculadora {
         Scanner scInt = new Scanner (System.in);
         Scanner scStri = new Scanner (System.in);
 
-        System.out.println("informe sua operação \nsoma  \\nsubtracao \nmultiplicacao");
+        System.out.println("informe sua operação \nsoma  \\nsubtracao \nmultiplicacao \ndivisao");
                operacao = scStri.nextLine();
         System.out.println("informe primeiro numero");
                n1 = scInt.nextInt();
@@ -21,6 +21,8 @@ public class calculadora {
             System.out.println("sua subtraçao = "+(n1-n2));
          }else if (operacao.equals("multiplicacao")){
             System.out.println("sua multiplicacao ="+(n1*n2));
+         }else if (operacao.equals("divisao")){
+             System.out.println("sua divisao = "+(n1/n2));
          }else{
              System.exit(0);
          }
