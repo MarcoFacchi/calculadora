@@ -8,7 +8,7 @@ public class calculadora {
         Scanner scInt = new Scanner (System.in);
         Scanner scStri = new Scanner (System.in);
 
-        System.out.println("informe sua operação \nsoma");
+        System.out.println("informe sua operação \nsoma  \\nsubtracao");
                operacao = scStri.nextLine();
         System.out.println("informe primeiro numero");
                n1 = scInt.nextInt();
@@ -17,7 +17,9 @@ public class calculadora {
                
          if ((operacao.equals("soma"))){
              System.out.println("sua soma = " +(n1+n2));
-         }else {
+         }else if ((operacao.equals("subtracao"))){
+            System.out.println("sua subtraçao = "+(n1-n2));
+         }else{
              System.exit(0);
          }
     }
